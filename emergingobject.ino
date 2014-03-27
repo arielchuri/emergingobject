@@ -1,3 +1,28 @@
+//  Emerging Object Code 3/26/14 9:22 PM                                                 
+//                                      +--------+ 
+//                                      | TOUCH  | 
+//                                      | SENSOR | 
+//                                      |        | 
+//                                      +------  | 
+//                 ARDUINO                       | 
+//              +-----------+                    | 
+//              |        GND|-----------------+  | 
+//              |           |                 |  | 
+//              |         13|                 |  | 
+//              |         12|                 |  | 
+//              |        ~11|-[R220]--[LED>]--O  | 
+//              |        ~10|-[R220]--[LED>]--O  | 
+//  +--[PHOTO]--|5V       ~9|-[R220]--[LED>]--O  | 
+//  |           |GND       8|                 |  | 
+//  O---[R10K]--|GND       7|                 |  | 
+//  |           |         ~6|-[R220]--[LED>]--O  | 
+//  +-----------|A0       ~5|-[R220]--[LED>]--O  | 
+//              |A1        4|----[R1M]--------+--O 
+//              |A2       ~3|-[R220]--[LED>]--+  | 
+//              |A3        2|--------------------+ 
+//              |A4        1|                      
+//              +-----------+                      
+//         
 #include <CapacitiveSensor.h>  //Load the capSense Library which the touch sensor uses.
 CapacitiveSensor   cs_4_2 = CapacitiveSensor(4,2); // Set up the touch sensor on pins 4 and 2.
 long capSense; // A variable to store the value from the touch sensor.
@@ -31,7 +56,3 @@ void loop() {
 }
  
 //==============ENDLOOP==============//
- 
-
- 
-
