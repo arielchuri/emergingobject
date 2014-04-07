@@ -5,8 +5,8 @@ void monitor() {
   Serial.print(capSense);
   Serial.print("\t state = "); 
   Serial.print(state);
-  Serial.print("\t ledfade = "); 
-  Serial.print(ledFade[0]);
+  Serial.print("\t darkLimit = "); 
+  Serial.print(darkLimit);
   Serial.print("\t touchTimer = "); 
   Serial.print(touchTimer);
   Serial.println("");

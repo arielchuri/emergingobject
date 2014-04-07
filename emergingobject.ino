@@ -9,7 +9,7 @@ int touchTimer;
 int lightPin = A0; // The pin with the light sensor.
 int lightValue = 0; // Variable to store the reading from the light sensor.
 boolean dark = false; // Keeps track of when it is dark out.
-int darkLimit = 700; // Limit for the light sensor. When the value is less then this number it is considered dark. Change this to make it more or less sensitive to the dark.
+int darkLimit = 400; // Limit for the light sensor. When the value is less then this number it is considered dark. Change this to make it more or less sensitive to the dark.
 
 // LIGHTS:===========================
 int ledPins[] = { // An array of variables with each of the LED pin numbers.
@@ -44,16 +44,16 @@ void setup() {
  
 void loop() {
     switch (state) {
-        case 0:
+        case 0: // Daytime
             state0();
             break;
-        case 1:
+        case 1: // Nightime
             state1();
             break;
-        case 2:
+        case 2: // touched, pause
             state2();
             break;
-        case 3:
+        case 3: // touched, ready for input.
             state3();
             break;
     }
