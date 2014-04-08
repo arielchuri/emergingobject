@@ -1,4 +1,4 @@
-void state3 () {
+void state3 () { // next i will get rid of the states.
     touchSense();
     if ( touch == true ){ // If so change state and start a timer.
         state = 2;
