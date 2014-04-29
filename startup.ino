@@ -1,14 +1,14 @@
 void monitor() { 
-  Serial.print("L = ");
-  Serial.print(lightValue);
+  //Serial.print("L = ");
+  //Serial.print(lightValue);
   Serial.print("\t T = "); // The "\t" character is a tab space to clean up the read out.
   Serial.print(capSense);
-  Serial.print("\t state = "); 
-  Serial.print(state);
-  Serial.print("\t darkLimit = "); 
-  Serial.print(darkLimit);
-  Serial.print("\t touchTimer = "); 
-  Serial.print(touchTimer);
+ // Serial.print("\t light = "); 
+ // Serial.print(light);
+ // Serial.print("\t darkLimit = "); 
+//Serial.print(darkLimit);
+Serial.print("\t touch = "); 
+  Serial.print(touch);
   Serial.println("");
   digitalWrite(aLED, aLEDstate); 
   aLEDstate = !aLEDstate;    
